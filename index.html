@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanuman:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="home">
+        <h1>Nget Sreyhuong</h1>
+        <p>Wanna be Web Developer</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">អំពីខ្ញុំ</a></li>
+            <li><a href="#work">ការងារ</a></li>
+            <li><a href="#skills">ជំនាញ</a></li>
+            <li><a href="#contact">ទំនាក់ទំនង</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        
+        <section id="about" class="section">
+            <h2 class="section-title">អំពីខ្ញុំ</h2>
+            <div class="profile-intro">
+                <div class="profile-img-container">
+                    <img src="photo.jpg" alt="Profile Picture's Huong">
+                </div>
+                <p>សួស្តី!! នាងខ្ញុំឈ្មោះ <strong>ង៉ែត​ ​ស្រីហួង </strong>បច្ចុប្បន្នជានិស្សិតនៃវិទ្យាស្ថានវីឌីស៊ី។</p>
+            </div>
+        </section>
+
+        <section id="work" class="section">
+            <h2 class="section-title">ការងារមួយចំនួនដែលខ្ញុំធ្លាប់ធ្វើ</h2>
+            <div class="portfolio-item">
+                <h3>E-commerce Using C++ Programming Language</h3>
+                <p>បង្កើត App Order Food ដោយអ្នកប្រើប្រាស់អាចធ្វើការបញ្ជាទិញតាមរយៈកម្មវិធីរុករក on app និងបង់ប្រាក់តាមរយៈការបង់ប្រាក់ with QR Code, Visa និង Master Card ជាដើម។</p>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <h2 class="section-title">ជំនាញ</h2>
+            <ul class="skills-list">
+                <li>C Programming</li>
+                <li>C++ Programming</li>
+                <li>C# Programming</li>
+                <li>HTML & CSS</li>
+                <li>SQL Server</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="section">
+            <h2 class="section-title">ទំនាក់ទំនង</h2>
+            <div class="contact-info">
+                <ul>
+                    <li>សារអេឡិកត្រូនិច: <a href="mailto:ngetsreyhuong@gmail.com">ngetsreyhuong@gmail.com</a></li>
+                    <li>លេខទូរស័ព្ទ: <a href="tel:+8558882264768">(855)882-264-768</a></li>
+                    <li>GitHub: <a href="https://github.com/ngetsreyhuong" target="_blank">github.com/ngetsreyhuong</a></li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-white rounded-lg shadow-sm m-4 dark:bg-gray-800">
+        <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400 ">© 2025 HUonG All Rights Reserved.</span>
+        <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+            <li>
+                <a href="#" class="hover:underline me-4 md:me-6">About</a>
+            </li>
+            <li>
+                <a href="#" class="hover:underline">Contact</a>
+            </li>
+        </ul>
+        </div>
+    </footer>
+
+    <button id="top-button" onclick="scrollToTop()">⬆️</button>
+
+    <script>
+        window.onscroll = function() {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            document.getElementById("top-button").style.display =
+                (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) 
+                ? "block" 
+                : "none";
+        }
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>
+
